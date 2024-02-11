@@ -1,0 +1,6 @@
+projectKey=weather-app-simple
+serverUrl=http://127.0.0.1:9000
+serverVersion=10.4.0.87286
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=weather-app-simple
+ceTaskId=5bb07aef-8fa0-42d1-be87-980687604227
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=5bb07aef-8fa0-42d1-be87-980687604227
