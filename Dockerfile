@@ -12,9 +12,10 @@ COPY package*.json ./
 RUN npm install --ignore-scripts
 
 # Bundle app source
-COPY src/ ./src/
-COPY public/ ./public/
-COPY .env ./
+# COPY src/ ./src/
+# COPY public/ ./public/
+# COPY .env ./
+COPY . .
 
 # Expose port 5173 to the outside world
 EXPOSE 5173
