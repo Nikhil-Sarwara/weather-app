@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:21.5
+FROM node:18
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm install
+RUN npm install --ignore-scripts
 
 # Copy only the necessary files
 COPY . .
