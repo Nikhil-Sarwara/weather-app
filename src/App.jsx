@@ -23,6 +23,7 @@ const App = () => {
       backgroundColor="blue.50"
       justify="center"
       align="center"
+      id="app-component"
     >
       <Box
         p={8}
@@ -55,6 +56,7 @@ const App = () => {
               onChange={(e) => setInput(e.target.value)}
             />
             <SearchIcon
+              id="search-icon"
               mt={4}
               height={"40px"}
               color="blue.500"
