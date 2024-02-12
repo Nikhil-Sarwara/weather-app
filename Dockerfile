@@ -1,4 +1,3 @@
-
 # Use an official Node.js runtime as a parent image
 FROM node:21.5
 
@@ -9,12 +8,10 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm install --ignore-scripts
+RUN npm install
 
-# Bundle app source
-COPY src/ ./src/
-COPY public/ ./public/
-COPY .env ./
+# Copy only the necessary files
+COPY . .
 
 # Expose port 5173 to the outside world
 EXPOSE 5173
