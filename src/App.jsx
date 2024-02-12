@@ -45,7 +45,7 @@ const App = () => {
           <Heading as="h1" fontSize="2xl" mb={4}>
             Hello, Beautiful World!
           </Heading>
-          <Text color="gray.600">Searh for any city</Text>
+          <Text color="gray.600">Search for any city</Text>
           <Flex flexDirection={"row"} gap={4}>
             <Input
               placeholder="Enter something"
