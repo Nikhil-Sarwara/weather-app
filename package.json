@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "deploy": "vite build && vercel deploy --prod"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
