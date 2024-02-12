@@ -9,10 +9,12 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm install
+RUN npm install --ignore-scripts
 
 # Bundle app source
-COPY . dest 
+COPY src/ ./src/
+COPY public/ ./public/
+COPY .env ./
 
 # Expose port 5173 to the outside world
 EXPOSE 5173
